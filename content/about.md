@@ -4,6 +4,7 @@ date: 2020-10-08T20:54:13-04:00
 hideMeta: true
 ---
 
+
 I'm Zac, a software developer and student, and this is
 my blog where I write about technology, life, and whatever I find
 interesting.
