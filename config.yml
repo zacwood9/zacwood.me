@@ -1,0 +1,55 @@
+baseURL: 'https://zacwood.me'
+title: Zac Wood
+paginate: 5
+theme: papermod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpored: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Zac Wood"
+  description: "Zac's Blog"
+  author: Zac Wood
+
+  images: "<link or path of image for opengraph, twitter-cards>"
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  comments: false
+  defaultTheme: auto
+  disableThemeToggle : false
+  disableSpecial1stPost : false
+
+  homeInfoParams:
+    Title: "Hi, I'm Zac! \U0001F44B"
+    Content: Welcome to my blog
+
+
+  socialIcons:
+    - name: twitter
+      url: 'https://twitter.com/_zacwood'
+    - name: github
+      url: 'https://github.com/zacwood9'
+    - name: instagram
+      url: 'https://instagram.com/zac_wood98'
+
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 1
+    # - name: Projects
+    #   url: /projects/
+    #   weight: 2
+    - name: Archives
+      url: /archives/
+      weight: 5
