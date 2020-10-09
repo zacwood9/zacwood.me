@@ -1,4 +1,4 @@
-baseURL: 'https://zacwood.me'
+baseURL: 'http://zacwood.me.s3-website-us-east-1.amazonaws.com/'
 title: Zac Wood
 paginate: 5
 theme: papermod
