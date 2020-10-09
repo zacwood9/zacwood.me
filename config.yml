@@ -1,4 +1,4 @@
-baseURL: 'http://zacwood.me.s3-website-us-east-1.amazonaws.com/'
+baseURL: 'https://d3ic959hr3lbve.cloudfront.net'
 title: Zac Wood
 paginate: 5
 theme: papermod
@@ -11,7 +11,7 @@ buildExpored: false
 # googleAnalytics: UA-123-45
 
 minify:
-  disableXML: true
+  disableXML: false
   minifyOutput: true
 
 params:

@@ -4,14 +4,12 @@ date: 2020-10-08T20:54:13-04:00
 hideMeta: true
 ---
 
-
 I'm Zac, a software developer and student, and this is
 my blog where I write about technology, life, and whatever I find
 interesting.
 
 I study Computer Science at George Mason University in Fairfax,
-VA. I'm passionate about building great software and using what I've
-learned doing so to teach and mentor great engineers.
+VA. I'm passionate about building great software and always learning new things.
 
 Have questions or suggestions? Feel free to hit me up on
 [Twitter](https://twitter.com/_zacwood) or
@@ -22,8 +20,12 @@ source projects? Check out my [repos](https://github.com/zacwood9).
 
 ### Work
 
+Starting August 2021, I will be a Software Engineering Associate at [Capital One](https://capitalone.com) in McLean, VA.
+
+Internships:
+
 - Summer 2020 - Software Engineering Intern @ [Capital One](https://capitalone.com)
-  - TBD
+  - AWS Neptune/Graph Databases, Data visualization with D3.js
 - Summer 2019 - Software Engineering Intern @ [FireEye](https://www.fireeye.com/)
   - React, Ruby on Rails
 - Summer 2018 - Software Engineering Intern @ [Remine](https://www.remine.com/info/index.html)
@@ -44,8 +46,8 @@ five star rating, I think I can say it's been a success!
 ### SRCT
 
 Since the Spring 2018 semester I've been an active member of [Mason
-SRCT](https://srct.gmu.edu) and was recently elected President to
-serve for the 2019-2020 academic year. SRCT stands for Student-Run
+SRCT](https://srct.gmu.edu) and was elected President to
+serve for the 2019-2020 academic year, and again for 2020-2021. SRCT stands for Student-Run
 Computing and Tech, and we build open source projects to solve
 problems that Mason students face.
 
