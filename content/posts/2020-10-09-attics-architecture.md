@@ -2,6 +2,7 @@
 title: "A New Attics Architecture"
 date: 2020-10-09T10:23:52-04:00
 summary: Streaming live music using a serverless architecture on AWS
+draft: true
 ---
 
 During my internship at Capital One last summer, I was able to get my feet wet with AWS for the first time.

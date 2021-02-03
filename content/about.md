@@ -2,6 +2,7 @@
 title: "Hi!"
 date: 2020-10-08T20:54:13-04:00
 hideMeta: true
+comments: false
 ---
 
 I'm Zac, a software developer and student, and this is

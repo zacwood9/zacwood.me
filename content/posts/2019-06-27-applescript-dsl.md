@@ -5,6 +5,10 @@ summary: Automate your Mac from Emacs with Lisp macros
 date: 2019-06-27T11:30:03+00:00
 ---
 
+> **Note:** I no longer use Emacs, so this code is no longer maintained.
+> Use inside your configuration at your own risk.
+> It's still a valuable example of Lisp macros!
+
 As much as I love Emacs, there's one thing that I've never been
 satisfied with: terminal support. There are multiple offerings built
 into Emacs, such as
@@ -135,6 +139,7 @@ manage your shell from Emacs. For example, run a command using
   (interactive "MRun command in iTerm: ")
   (iterm (:tell "current session of current window" (format "write text \"%s\"" cmd))))
 ```
+
 
 This a been a nice boost in my work flow, and it was a lot of fun
 exploring the weirdness of Lisp macros. Lots of things could be

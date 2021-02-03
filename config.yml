@@ -1,4 +1,4 @@
-baseURL: 'https://d3ic959hr3lbve.cloudfront.net'
+baseURL: 'https://zacwood.me'
 title: Zac Wood
 paginate: 5
 theme: papermod
@@ -24,14 +24,14 @@ params:
 
   ShowReadingTime: false
   ShowShareButtons: true
-  comments: false
+  comments: true
   defaultTheme: auto
   disableThemeToggle : false
   disableSpecial1stPost : false
 
   homeInfoParams:
     Title: "Hi, I'm Zac! \U0001F44B"
-    Content: Welcome to my blog
+    Content: My adventures building software
 
 
   socialIcons:
@@ -44,12 +44,23 @@ params:
 
 menu:
   main:
+    # - name: Attics
+    #   url: /attics
+    #   weight: 1
     - name: About
       url: /about
-      weight: 1
-    # - name: Projects
-    #   url: /projects/
-    #   weight: 2
+      weight: 2
     - name: Archives
       url: /archives/
       weight: 5
+
+deployment:
+  targets:
+    name: "s3"
+    URL: "s3://zacwood.me?region=us-east-1"
+    cloudFrontDistributionID: "E32EPHNFLOCQ5"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
