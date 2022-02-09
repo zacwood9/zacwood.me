@@ -17,7 +17,7 @@ minify:
 params:
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Zac Wood"
-  description: "Zac's Blog"
+  description: "Zac's Software and Consulting"
   author: Zac Wood
 
   images: "<link or path of image for opengraph, twitter-cards>"
@@ -31,7 +31,7 @@ params:
 
   homeInfoParams:
     Title: "Hi, I'm Zac! \U0001F44B"
-    Content: My adventures building software
+    Content: I'm a software engineer passionate about building quality applications.
 
 
   socialIcons:

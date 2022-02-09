@@ -32,22 +32,50 @@ Running the server on NixOS lets you write your server configuration in a declar
 I do not claim these to be best practices for deploying IHP or software in general. This is for a small, low traffic open source hobby project.
 It works well for my use case, but make sure you verify everything yourself before relying on this code for your production apps.
 
-### Step 1: Enable Swapfile
+### Step 1: Setup IHP Project
 
-On a `t2.micro` EC2 instance, we're working with a tiny amount of RAM. By default, the machine wasn't even able to install vim with nix without running out of memory. We can get around this issue by declaring a swapfile, which the system will use for memory when it runs out of physical memory. This is significantly slower than RAM, but since this is just for installing programs it's not a big deal.
+To organize things, I create a `Nix` subfolder in my IHP project that contains two files:
 
-First, use `fallocate` to create a swapfile
 ```
-$ fallocate -l 4G /var/swapfile
+nixos.nix
+configuration.nix
 ```
 
-Then in your NixOS config, (`/etc/nixos/configuration.nix`), add the line
+`nixos.nix` describes the build of a NixOS system:
 
 ```nix
-  swapDevices = [ { device = "/var/swapfile"; } ];
+import <nixpkgs/nixos> {
+  system = "x86_64-linux";
+
+  configuration = {
+    imports = [
+      ./configuration.nix
+    ];
+  };
+}
 ```
 
-to register the swapfile. Run `nixos-rebuild switch` to rebuild your configuration, and you should be able to install other programs easily now.
+And `configuration.nix` describes the system's configuration.
+
+```nix
+{ modulesPath, config, pkgs, ... }:
+{
+  imports = [
+    "${modulesPath}/virtualisation/amazon-image.nix"
+    ];
+  ec2.hvm = true;
+
+  environment.systemPackages = [ pkgs.postgresql_11 ];
+  swapDevices = [ { device = "/var/swapfile"; } ];
+
+  time.timeZone = "America/New_York";
+
+  services.fail2ban = {
+    enable = true;
+  };
+}
+```
+
 
 ### Step 2: Setup PostgreSQL
 
@@ -117,9 +145,9 @@ you can easily define a systemd service for your application with the following 
       Restart = "always";
       User = "root";
       ExecStartPre = [
-        '' ${pkgs.bash}/bin/bash -c "${pkgs.docker}/bin/docker stop attics || true" ''
-        '' ${pkgs.bash}/bin/bash -c "${pkgs.docker}/bin/docker rm attics || true" ''
-        '' ${pkgs.docker}/bin/docker pull zacwood9/attics:latest ''
+        '' ${pkgs.bash}/bin/bash -c "${pkgs.docker}/bin/docker stop <your image> || true" ''
+        '' ${pkgs.bash}/bin/bash -c "${pkgs.docker}/bin/docker rm <your image> || true" ''
+        '' ${pkgs.docker}/bin/docker pull <your image>:latest ''
       ];
       ExecStart = ''
         ${pkgs.docker}/bin/docker run \
@@ -127,7 +155,7 @@ you can easily define a systemd service for your application with the following 
           -p "8000:8000" \
           -e "DATABASE_URL=${dbUrl}" \
           -e "ATTICS_ENVIRONMENT=production" \
-          zacwood9/attics:latest
+          <your image>:latest
       '';
     };
   };

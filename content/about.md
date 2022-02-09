@@ -5,12 +5,10 @@ hideMeta: true
 comments: false
 ---
 
-I'm Zac, a software developer and student, and this is
+I'm Zac, a software engineer, and this is
 my blog where I write about technology, life, and whatever I find
 interesting.
 
-I study Computer Science at George Mason University in Fairfax,
-VA. I'm passionate about building great software and always learning new things.
 
 Have questions or suggestions? Feel free to hit me up on
 [Twitter](https://twitter.com/_zacwood) or
@@ -21,7 +19,8 @@ source projects? Check out my [repos](https://github.com/zacwood9).
 
 ### Work
 
-Starting August 2021, I will be a Software Engineering Associate at [Capital One](https://capitalone.com) in McLean, VA.
+I'm currently working at Captial One developing software with marketing tech to incentivize customer behavior.
+I also do part-time independent consulting work for companies using Haskell and IHP.
 
 Internships:
 
@@ -34,6 +33,16 @@ Internships:
 - Summer 2017 - Software Engineering Intern @ [Edge 360](https://www.edge360.com/)
   - Node.js
 
+### IHP
+
+At the beginning of 2021 I started contributing to the Haskell web framework [IHP](https://ihp.digitallyinduced.com).
+I've worked mainly on contributing features upstream that I built for my own app written in IHP. Currently working
+on improving the already great developer experience by expanding the IHP web IDE!
+
+I'm a Platnium Partner in the [digitally induced Partner Program]( https://ihp.digitallyinduced.com/Partners) under the name [Zallocate Software](https://zallocate.com).
+If you're looking to build your business with IHP and are looking for help, please reach out. Depending on availability, I'd be happy to
+help develop the project or connect you with other talented IHP developers. I am also available for general Haskell consulting.
+
 ### Attics
 
 In October 2018 I released my first iOS app
@@ -41,26 +50,6 @@ In October 2018 I released my first iOS app
 Store. It lets you stream thousands of live Grateful Dead concerts
 right from your phone. If you're a Deadhead, you'll love it. I built
 it for myself and never expected it to get any users, but with
-thousands of downloads, 200+ daily active users, and a (nearly) solid
+thousands of downloads, hundreds daily active users, and a (nearly) solid
 five star rating, I think I can say it's been a success!
 
-### SRCT
-
-Since the Spring 2018 semester I've been an active member of [Mason
-SRCT](https://srct.gmu.edu) and was elected President to
-serve for the 2019-2020 academic year, and again for 2020-2021. SRCT stands for Student-Run
-Computing and Tech, and we build open source projects to solve
-problems that Mason students face.
-
-I'm the project manager of the [Schedules](https://schedules.gmu.edu)
-project. It's a website built with Ruby on Rails that lets
-students browse the Mason course catalog more fluidly and with more
-options than they've ever had with the university's offerings. You can
-also export your course schedule to your calendar manager of choice.
-
-Through SRCT, I also love to share the knowledge I've gained through working on these projects.
-Students show up to their first SRCT meetings often with
-one or two CS classes under their belt, and through one on one
-mentoring and the tech talks we give each semester, we teach them
-the basics of software development that they can use to build
-projects with us and go out into the workforce with essential skills.
